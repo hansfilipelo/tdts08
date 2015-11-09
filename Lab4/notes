@@ -1,0 +1,20 @@
+go.ss 2 7
+
+block: 9530
+
+0047f400 <findshapes+450> lw $v0[2],-31384($gp[28])
+0047f408 <findshapes+458> subu $v0[2],$v0[2],$s7[23]
+0047f410 <findshapes+460> addu $s0[16],$s0[16],$v0[2]
+0047f418 <findshapes+468> addu $v0[2],$s0[16],$s3[19]
+0047f420 <findshapes+470> sll $v0[2],$v0[2],0x2
+0047f428 <findshapes+478> lui $t3[11],4099
+0047f430 <findshapes+480> addiu $t3[11],$t3[11],-13312
+0047f438 <findshapes+488> addu $v0[2],$v0[2],$t3[11]
+0047f440 <findshapes+490> lw $v0[2],0($v0[2])
+0047f448 <findshapes+498> lui $t2[10],4099
+0047f450 <findshapes+4a0> addiu $t2[10],$t2[10],3696
+0047f458 <findshapes+4a8> sll $v0[2],$v0[2],0x2
+0047f460 <findshapes+4b0> addu $v0[2],$v0[2],$t2[10]
+0047f468 <findshapes+4b8> lw $v0[2],0($v0[2])
+0047f470 <findshapes+4c0> bne $v0[2],$s6[22],0047f498 <findshapes+4e8>
+
