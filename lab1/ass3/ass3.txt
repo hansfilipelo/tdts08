@@ -6,9 +6,9 @@ entity, or for any commercial purpose, without the prior written permission
 of SimpleScalar, LLC (info@simplescalar.com).
 
 Portions Copyright (C) 1989-1993 by Rabin A. Sugumar and Santosh G. Abraham.
-sim: command line: sim-cheetah -config config.conf ../../bin/go.ss 
+sim: command line: sim-cheetah -config config.conf ../../bin/go.ss 3 7 
 
-sim: simulation started @ Tue Nov 17 14:37:11 2015, options follow:
+sim: simulation started @ Tue Nov 17 14:56:13 2015, options follow:
 
 sim-cheetah: This program implements a functional simulator driver for
 Cheetah.  Cheetah is a cache simulation package written by Rabin Sugumar
@@ -48,15 +48,19 @@ libcheetah: maximum associativity is 8
 libcheetah: line size is 32 bytes
 
 sim: ** starting functional simulation **
+  1 B D4 
+  2 W pass
+  3 B pass
+Game over
 
 sim: ** simulation statistics **
-sim_num_insn             2147483647 # total number of instructions executed
-sim_num_refs              390520987 # total number of loads and stores executed
-sim_elapsed_time                116 # total simulation time in seconds
-sim_inst_rate          18512790.0603 # simulation speed (in insts/sec)
+sim_num_insn                1699550 # total number of instructions executed
+sim_num_refs                 392301 # total number of loads and stores executed
+sim_elapsed_time                  1 # total simulation time in seconds
+sim_inst_rate          1699550.0000 # simulation speed (in insts/sec)
 
 libcheetah: ** end of simulation **
-Addresses processed: 390520987
+Addresses processed: 392419
 Line size: 32 bytes
 
 Miss Ratios
@@ -65,11 +69,11 @@ ___________
 		Associativity
 		1		2		3		4		5		6		7		8		
 No. of sets
-128		0.076391	0.063012	0.062534	0.062534	0.062534	0.062534	0.062534	0.062534	
-256		0.069460	0.062773	0.062534	0.062534	0.062534	0.062534	0.062532	0.062529	
-512		0.066116	0.062534	0.062532	0.062528	0.062524	0.010287	0.000031	0.000031	
-1024		0.064324	0.053741	0.023446	0.000031	0.000030	0.000029	0.000029	0.000028	
-2048		0.053027	0.000031	0.000029	0.000028	0.000027	0.000027	0.000027	0.000027	
-4096		0.052666	0.000028	0.000027	0.000027	0.000027	0.000027	0.000027	0.000027	
+128		0.073343	0.051437	0.050074	0.049643	0.049386	0.049243	0.049159	0.049141	
+256		0.062533	0.050410	0.049414	0.049180	0.042867	0.038642	0.037394	0.036025	
+512		0.056093	0.046884	0.037855	0.035640	0.034229	0.033118	0.032909	0.032662	
+1024		0.048188	0.035133	0.033691	0.032748	0.032371	0.032035	0.031696	0.030847	
+2048		0.036522	0.032832	0.031762	0.030643	0.029527	0.028625	0.028131	0.027942	
+4096		0.033021	0.030791	0.029094	0.028118	0.027942	0.027942	0.027942	0.027942	
 
 
